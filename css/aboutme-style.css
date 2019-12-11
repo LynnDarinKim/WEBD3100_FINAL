@@ -1,0 +1,168 @@
+/*-------------------------RESUME---------------------*/
+body {
+    background-color: #F99302;
+}
+.resume_layout {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: repeat(5,1fr);
+    grid-template-columns:repeat(5,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "figure figure figure figure figure"
+    "address address address address address"
+    "p p p p p"
+    "div div div div div"
+    "article_work article_work article_work article_work article_work"
+    "article_work article_work article_work article_work article_work"
+    "article_work article_work article_work article_work article_work"
+    "article_edu article_edu article_edu article_edu article_edu"
+    "article_cert article_cert article_cert article_cert article_cert"
+    ;
+  }
+  
+  @media screen and (min-width: 760px) {
+  
+    .resume_layout {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: repeat(5,1fr);
+      grid-template-columns:repeat(5,1fr);
+      grid-auto-rows: minmax(100px, auto);
+      max-width: 100%;
+      margin: 5% auto;
+      grid-gap: 10px;
+      grid-template-areas: 
+      "figure figure article_work article_work article_work"
+      "figure figure article_work article_work article_work"
+      "address address article_work article_work article_work"
+      "p p article_work article_work article_work"
+      "p p article_edu article_edu article_edu"
+      "div div article_cert article_cert article_cert"
+      ;
+    }
+  }
+  
+  .resume_layout > * {
+    color: black;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  
+  .resume_figure {
+    grid-area: figure;
+    height: 100%;
+  }
+  .resume_address {
+    grid-area: address;
+  }
+  .resume_text {
+    grid-area: p;
+    height: 100%;
+  }
+  .resume_div {
+    grid-area: div;
+  }
+  .resume_article_work {
+    grid-area: article_work;
+  }
+  .resume_article_edu {
+    grid-area: article_edu;
+  }
+  .resume_article_cert {
+    grid-area: article_cert;
+  }
+  
+  /*resume profile picture with description*/
+  
+  .resume_figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  }
+  
+  .resume_profile_image {
+    width: 250px;
+    height: 250px;
+    background: url("../images/me2.png") no-repeat 100%;
+    border-radius: 50%;
+    background-size: cover;
+    border: 2px solid white;
+  }
+  
+  figcaption {
+    font-size: 2em;
+  }
+  
+  /*resume_address*/
+  
+  .resume_address a {
+    color: black;
+  }
+  
+  /*image links*/
+  
+  .online_links {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  }
+  
+  .link_img {
+    margin-top: 1em;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .twt {
+  background: url(http://gadgetsmagazine.com.ph/wp-content/uploads/2017/09/Twitter.jpg) no-repeat 50%;
+  background-size: cover;
+  border-radius: 50%;
+  }
+  
+  .dribble {
+    background: url(https://cdn.dribbble.com/assets/dribbble-ball-icon-e94956d5f010d19607348176b0ae90def55d61871a43cb4bcb6d771d8d235471.svg) no-repeat;
+    background-size: cover;
+  }
+  
+  .codepen {
+    background: url(https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+  }
+
+  /* .experience_example_wrap {
+      display: flex;
+      flex-direction: column;
+  } */
+  /* .experience {
+      display: flex;
+  } */
+  /* .career_description {
+    display: flex;
+  }
+  .company_name_duration {
+    margin-right: 4rem;
+  } */
+
+  h3{
+      margin-bottom: 2rem;
+  }
+  
+  .career_description {
+      margin-bottom: 2rem;
+  }
